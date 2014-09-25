@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        style="@style/TitleBar_Bar">
+
+
+        <TextView
+            android:text="@string/title_guangjie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/shangchang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:text="@string/title_yinxiangcheng"
+            android:background="@drawable/titlebar_bg_selector"
+            android:drawableRight="@drawable/icon_down"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/search_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="#999"
+                    android:text="@string/hint_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_search"
+                    android:drawablePadding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/tuijian_bg"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/Tuijian_Layout">
+                    <FrameLayout style="@style/Tuijian_Icon"
+                        android:id="@+id/remenshangpin" >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/back_rexiao"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_rexiao"/>
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/Tuijian_Icon"
+                        android:id="@+id/tesedianpu" >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/back_tese"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_tese"/>
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/Tuijian_Icon"
+                        android:id="@+id/yulexiuxian" >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/back_canyin"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_canyin"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/Tuijian_Layout">
+                    <TextView style="@style/Tuijian_Title"
+                        android:text="@string/title_remenshangpin"/>
+                    <TextView style="@style/Tuijian_Title"
+                        android:text="@string/title_tesedianpu"/>
+                    <TextView style="@style/Tuijian_Title"
+                        android:text="@string/title_canyinyule"/>
+                </LinearLayout>
+
+                <LinearLayout style="@style/Tuijian_Layout"
+                    android:layout_marginTop="10dp">
+                    <FrameLayout style="@style/Tuijian_Icon"
+                        android:id="@+id/loucengfenbu" >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/back_louceng"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_louceng"/>
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/Tuijian_Icon"
+                        android:id="@+id/pinpaileimu" >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/back_pinpai"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_pinpai"/>
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/Tuijian_Icon"
+                        android:id="@+id/qitafuwu" >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/back_gengduo"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_gengduo"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/Tuijian_Layout">
+                    <TextView style="@style/Tuijian_Title"
+                        android:text="@string/title_loucengbuju"/>
+                    <TextView style="@style/Tuijian_Title"
+                        android:text="@string/title_pinpaileimu"/>
+                    <TextView style="@style/Tuijian_Title"
+                        android:text="@string/title_qitafuwu"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp">
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/line"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="18sp"
+                        android:textColor="#3d4245"
+                        android:text="@string/title_pinpaihuodong" />
+                </LinearLayout>
+
+                <com.taobao.daogou.client.view.ListViewForScrollView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="#999"
+                    android:text="@string/hint_jiazai"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+        <TextView
+            android:id="@+id/dingwei"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:textColor="#999"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/hint_dingwei"/>
+
+    </FrameLayout>
+</LinearLayout>

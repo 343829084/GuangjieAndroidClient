@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/TitleBar_Bar">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TitleBar_Title"
+            android:text="@string/title_dingwei"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/text"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/search_bg"
+            android:textSize="18sp"
+            android:textColor="#5f646e"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:completionThreshold="1"
+            android:textColorHint="#999"
+            android:hint="@string/hint_dingwei_input"
+            android:gravity="center"
+            android:dropDownVerticalOffset="5dp"/>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/title_queding"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:background="@drawable/search_button_bg_selector"/>
+
+    </LinearLayout>
+
+</LinearLayout>

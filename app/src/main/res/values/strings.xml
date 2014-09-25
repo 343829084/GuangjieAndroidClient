@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Guangjie</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_pinpaihuodong">品牌活动</string>
+    <string name="title_tesedianpu">特色门店</string>
+    <string name="title_remenshangpin">热销商品</string>
+    <string name="title_canyinyule">餐饮娱乐</string>
+    <string name="title_loucengbuju">楼层布局</string>
+    <string name="title_pinpaileimu">品牌类目</string>
+    <string name="title_qitafuwu">更多服务</string>
+    <string name="title_zhuanmaidian">商铺详情</string>
+    <string name="hint_youhuixinxi">优惠信息:</string>
+    <string name="hint_dianpudizhi">店铺地址</string>
+    <string name="hint_huodongtese">活动时间:</string>
+    <string name="hint_input">搜索商品或店铺</string>
+    <string name="title_xinpinremai">新品热卖</string>
+    <string name="title_guangjie">逛街</string>
+    <string name="title_yinxiangcheng">印象城</string>
+    <string name="title_search">搜索</string>
+    <string name="title_dingwei">定位</string>
+    <string name="hint_search">输入商品或店铺名称</string>
+    <string name="hint_dingwei_input">输入商场名称</string>
+    <string name="hint_gengduofuwu">更多服务敬请期待</string>
+    <string name="hint_meiyousousuojieguo">抱歉，暂无此信息的搜索结果</string>
+    <string name="hint_meiyoushangchang">抱歉，暂无此商场的信息</string>
+    <string name="hint_home">首页</string>
+    <string name="hint_wuyouhui">暂无优惠</string>
+    <string name="hint_dianpuweizhi">店铺位置:</string>
+    <string name="hint_chongxinsousuo">重新搜索</string>
+    <string name="hint_dingwei">正在定位,请稍等...</string>
+    <string name="hint_jiazai">今天的优惠到底了，到别的栏目看看吧</string>
+    <string name="title_suozailouceng">所在楼层</string>
+    <string name="title_queding">确定</string>
+    <string name="title_luxianchaxun">路线查询</string>
+</resources>

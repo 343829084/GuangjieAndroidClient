@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Tuijian_Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Tuijian_Icon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">#00000000</item>
+    </style>
+    
+    <style name="Tuijian_Title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#3d4245</item>
+        <item name="android:textSize">@dimen/home_textview_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TitleBar_Bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">#ed7551</item>
+    </style>
+
+    <style name="TitleBar_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:drawableLeft">@drawable/icon_back</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:textSize">@dimen/titlebar_title_size</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">@drawable/titlebar_bg_selector</item>
+    </style>
+
+    <style name="TitleBar_Button">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/titlebar_bg_selector</item>
+    </style>
+
+    <style name="ImageDialog">
+        <item name="android:background">#000</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MenuDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="MapDetailButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">37.3dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/map_selection_button_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/hint"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="#fa4e56"
+        android:textSize="18sp"
+        android:background="#fff"
+    />

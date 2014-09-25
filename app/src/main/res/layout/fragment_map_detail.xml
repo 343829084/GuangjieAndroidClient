@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/TitleBar_Bar">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TitleBar_Title"
+            android:text="@string/title_loucengbuju" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/menu"
+            style="@style/TitleBar_Button"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/icon_menu"/>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/map_detail_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/map_detail_button_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="步行梯" />
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="垂直电梯" />
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="自动扶梯" />
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="停车场" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/map_detail_button_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="商场入口" />
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="资讯台" />
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="洗手间" />
+
+                <Button
+                    style="@style/MapDetailButton"
+                    android:text="自动坡梯" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fragment_map_detail_get_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/iconfont_location2"
+            android:padding="5dp"
+            android:background="@drawable/search_button_bg_selector"/>
+
+        <include layout="@layout/item_louceng"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

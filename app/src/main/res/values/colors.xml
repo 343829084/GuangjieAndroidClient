@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="map_selection_button_active">#EF754E</color>
+    <color name="map_selection_button">#5E656d</color>
+    <color name="route_line">#ec7451</color>
+</resources>
